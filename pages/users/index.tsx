@@ -1,58 +1,34 @@
-import Layout from '../../components/Layout'
-import Image from 'next/image'
-export default function index() {
+import Layout from '../../components/Layout';
+
+interface UsersProps{
+    dataUsers: Array<any>;
+}
+
+export default function Users(props:UsersProps) {
+    const {dataUsers} = props;
+    console.log(dataUsers);
     return (
         <Layout pageTitle="User">
-            <h1 style={{paddingLeft:'64px',}}>User List</h1>  
-            <Image src="/profilePicture.jpg" width={150} height={150} />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum excepturi. Alias reprehenderit odit accusamus vero quos suscipit, ipsum minima aspernatur porro. Omnis, dolores? Omnis sapiente mollitia accusamus iste et!</p>
-            <Image src="/320_placeholder.jpg" width={150} height={150} />
+            <h1 style={{paddingLeft:'64px',}}>User List</h1>   
+            <ul style={{paddingLeft:'64px',}}>
+                {dataUsers.map((data)=>(
+                    <li>
+                        <h4>{data.name}</h4>
+                        <span>{data.email}</span>
+                    </li>
+                ))}
+            </ul>
         </Layout>
     )
+}
+
+export async function getStaticProps() {
+    const res = await fetch('https://jsonplaceholder.typicode.com/users');
+    const dataUsers = await res.json();
+    return {
+        props:{
+            dataUsers,
+        }
+    }
 }
 
