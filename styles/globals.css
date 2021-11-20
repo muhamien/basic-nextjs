@@ -19,3 +19,14 @@ a {
   padding-left: 64px;
   padding-right: 64px;
 }
+
+.not-found{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.not-found h1{
+  color: rgb(110, 110, 110);
+}
