@@ -1,0 +1,26 @@
+.container{ 
+    margin-top: 10px;
+    box-shadow: 3px 3px 13px rgb(0, 0, 0/32%);
+}
+
+.list{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    background-color: antiquewhite;
+}
+
+.item{
+    margin-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.item a:hover{
+    padding-bottom: 1rem;
+    font-weight: bold;
+    color: purple;
+    height: 100%;
+    border-bottom: 2px solid red;
+}
+
